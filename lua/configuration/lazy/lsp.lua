@@ -10,7 +10,7 @@ local on_attach = function(opts)
 end
 
 local servers = {
-    pyright = {},
+    pylsp = {},
     rust_analyzer = {},
     lua_ls = {
         Lua = {
@@ -37,9 +37,11 @@ return {
         "hrsh7th/nvim-cmp",
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
+        "j-hui/fidget.nvim",
     },
 
     config = function()
+        require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = vim.tbl_keys(servers),
