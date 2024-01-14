@@ -1,25 +1,18 @@
-function ColorFunction(color)
-    color = color or "rose-pine"
-    vim.cmd.colorscheme(color)
-end
+-- function ColorFunction(color)
+--     color = color or "gruvbox-material"
+--     vim.cmd.colorscheme(color)
+-- end
 
 return {
-    "rose-pine/nvim",
+    "kvrohit/rasmus.nvim",
     config = function()
-        require("rose-pine").setup({
-            styles = {
-                bold = true,
-                italic = false,
-            },
-
-            disable_background = true,
-
-            highlight_groups = {
-                ColorColumn = { bg = "#808080" },
-            },
-        })
-        vim.cmd.colorscheme("rose-pine")
-        ColorFunction()
-    end,
+        vim.g.rasmus_bold_functions = true
+        vim.g.rasmus_bold_keywords = true
+        vim.g.rasmus_bold_booleans = true
+        vim.g.rasmus_bold_variables = true
+        vim.g.rasmus_transparent = true
+        vim.cmd.colorscheme("rasmus")
+--        ColorFunction()
+    end
 }
 
