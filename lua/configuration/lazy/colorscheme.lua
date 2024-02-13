@@ -1,8 +1,16 @@
 return {
-   "AlessandroYorba/Alduin",
+   "projekt0n/github-nvim-theme",
    config = function()
-       vim.g.alduin_Shout_Become_Ethereal = 1
-       vim.cmd.colorscheme("alduin")
+       require("github-theme").setup({
+           options = {
+               transparent = true,
+               styles = {
+                   keywords = "bold",
+                   types = "bold",
+               }
+           }
+       })
+       vim.cmd.colorscheme("github_dark_high_contrast")
    end
 }
 
