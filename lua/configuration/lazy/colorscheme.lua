@@ -1,16 +1,13 @@
 return {
-   "projekt0n/github-nvim-theme",
-   config = function()
-       require("github-theme").setup({
-           options = {
-               transparent = true,
-               styles = {
-                   keywords = "bold",
-                   types = "bold",
-               }
-           }
-       })
-       vim.cmd.colorscheme("github_dark_high_contrast")
-   end
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = function()
+        require("gruvbox").setup({
+            terminal_colors = true,
+            bold = true,
+            transparent_mode = true,
+        })
+        vim.cmd.colorscheme("gruvbox")
+    end
 }
 
