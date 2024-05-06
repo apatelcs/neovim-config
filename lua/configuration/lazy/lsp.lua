@@ -10,7 +10,21 @@ local on_attach = function(opts)
 end
 
 local servers = {
-    pylsp = {},
+    pylsp = {
+        configurationSources = { "flake8" },
+        formatCommand = { "black" },
+        pylsp = {
+            plugins = {
+                pyflakes = { enabled = true },
+                pylsp_mypy = { enabled = false },
+                pycodestyle = {
+                    enabled = true,
+                    ignore = { "E501", "W391" },
+                },
+                yapf = { enabled = true },
+            },
+        }
+    },
     rust_analyzer = {},
     lua_ls = {
         Lua = {
