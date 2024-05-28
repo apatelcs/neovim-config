@@ -1,13 +1,17 @@
 return {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
+    "Yagua/nebulous.nvim",
     config = function()
-        require("gruvbox").setup({
-            terminal_colors = true,
-            bold = true,
-            transparent_mode = true,
+        require("nebulous").setup({
+            variant = "nova",
+            disable = {
+                background = true,
+            },
+            italic = {
+                keywords = false,
+                variables = false,
+            },
         })
-        vim.cmd.colorscheme("gruvbox")
+        vim.cmd.colorscheme("nebulous")
     end
 }
 
