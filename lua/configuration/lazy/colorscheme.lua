@@ -1,18 +1,4 @@
 return {
-    -- "Yagua/nebulous.nvim",
-    -- config = function()
-    --     require("nebulous").setup({
-    --         variant = "nova",
-    --         disable = {
-    --             background = true,
-    --         },
-    --         italic = {
-    --             keywords = false,
-    --             variables = false,
-    --         },
-    --     })
-    --     vim.cmd.colorscheme("nebulous")
-    -- end
     "ramojus/mellifluous.nvim",
     config = function()
         require("mellifluous").setup({
@@ -27,8 +13,8 @@ return {
                 floating_windows = true,
                 telescope = true,
                 file_tree = true,
-                cursor_line = true,
-                status_line = true,
+                cursor_line = false,
+                status_line = false,
             },
         })
         vim.cmd.colorscheme("mellifluous")
