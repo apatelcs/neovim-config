@@ -6,7 +6,7 @@ return {
             keywordStyle = { bold = true, italic = false },
             statementStyle = { bold = true },
             typeStyle = { bold = true },
-            transparent = false,
+            transparent = true,
             terminalColors = true,
             colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
             theme = "wave",
