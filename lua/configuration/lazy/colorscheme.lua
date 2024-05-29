@@ -1,23 +1,17 @@
 return {
-    "ramojus/mellifluous.nvim",
+    "rebelot/kanagawa.nvim",
     config = function()
-        require("mellifluous").setup({
-            color_set = "alduin",
-            styles = {
-                comments = { italic = true },
-                keywords = { bold = true },
-                types = { bold = true },
-            },
-            transparent_background = {
-                enabled = true,
-                floating_windows = true,
-                telescope = true,
-                file_tree = true,
-                cursor_line = false,
-                status_line = false,
-            },
+        require("kanagawa").setup({
+            commentStyle = { italic = true },
+            keywordStyle = { bold = true, italic = false },
+            statementStyle = { bold = true },
+            typeStyle = { bold = true },
+            transparent = false,
+            terminalColors = true,
+            colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
+            theme = "wave",
         })
-        vim.cmd.colorscheme("mellifluous")
+        vim.cmd.colorscheme("kanagawa")
     end
 }
 
