@@ -8,7 +8,7 @@ return {
             typeStyle = { bold = true },
             transparent = true,
             terminalColors = true,
-            colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
+            colors = { theme = { wave = { ui = { bg_gutter = "none", } } } },
             theme = "wave",
         })
         vim.cmd.colorscheme("kanagawa")
