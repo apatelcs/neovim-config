@@ -1,17 +1,9 @@
 return {
-    "rebelot/kanagawa.nvim",
+    "Mofiqul/adwaita.nvim",
     config = function()
-        require("kanagawa").setup({
-            commentStyle = { italic = true },
-            keywordStyle = { bold = true, italic = false },
-            statementStyle = { bold = true },
-            typeStyle = { bold = true },
-            transparent = true,
-            terminalColors = true,
-            colors = { theme = { wave = { ui = { bg_gutter = "none", } } } },
-            theme = "wave",
-        })
-        vim.cmd.colorscheme("kanagawa")
+        vim.g.adwaita_darker = true
+        vim.g.adwaita_disable_cursorline = true
+        vim.cmd.colorscheme("adwaita")
     end
 }
 
