@@ -25,6 +25,13 @@ local servers = {
             },
         },
     },
+    tsserver = {},
+    html = {},
+    cssls = {},
+    tailwindcss = {},
+    graphql = {
+        filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+    },
 }
 
 return {
