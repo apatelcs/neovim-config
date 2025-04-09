@@ -25,7 +25,6 @@ local servers = {
             },
         },
     },
-    tsserver = {},
     html = {},
     cssls = {},
     tailwindcss = {},
