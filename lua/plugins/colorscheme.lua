@@ -1,10 +1,13 @@
 return {
-  'catppuccin/nvim',
+  'ellisonleao/gruvbox.nvim',
   priority = 1000,
   config = function()
-    require('catppuccin').setup({
-      transparent_background = true,
+    require('gruvbox').setup({
+      terminal_colors = true,
+      italic = { strings = false },
+      contrast = 'hard',
+      transparent_mode = true,
     })
-    vim.cmd('colorscheme catppuccin')
+    vim.cmd('colorscheme gruvbox')
   end
 }
