@@ -1,21 +1,15 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "vague-theme/vague.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require("kanagawa").setup({
-      keywordStyle = { italic = false, bold = true },
+    require("vague").setup({
       transparent = true,
-      colors = {
-        theme = {
-          all = {
-            ui = {
-              bg_gutter = "none",
-            },
-          },
-        },
+      style = {
+        keywords = "bold",
+        keyword_return = "bold",
       },
     })
-    vim.cmd.colorscheme("kanagawa")
+    vim.cmd.colorscheme("vague")
   end,
 }
