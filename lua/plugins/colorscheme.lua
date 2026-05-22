@@ -15,6 +15,10 @@ return {
             ui = {
               bg_gutter = "none",
             },
+            syn = {
+              type = "#c4b28a",
+              fun = "#c4746e",
+            },
           },
         },
       },
